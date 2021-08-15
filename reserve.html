@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts cdn link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Reservation</title>
+</head>
+<body class="about-page">
+     <!--Header------->
+     <header class="about-header">
+         <div>
+             <img class="logo" src="img/logo.PNG" alt="Logo">
+         </div>
+         <!--Navbar------->
+         <nav class="narbar">
+             <ul>
+                 <li><a href="index.html">ホーム</a></li>
+                 <li><a href="about.html">私たちについて</a></li>
+                 <li><a href="menu.html">メニュー</a></li>
+                 <li><a href="popular.html">人気</a></li>
+                 <li><a href="reserve.html">予約</a></li>
+             </ul>
+         </nav>
+         <!--End of Navbar------->
+     </header>
+      <!--End of Header------->
+      <!--Start of  Article ------->
+      <article>
+      <section class="banner">
+          <h2><span>TABLE</span>&ensp;RESERVATION</h2>
+          <div class="card-container">
+              <div class="card-img">
+
+              </div>
+              <div class="card-content">
+                  <h3>テーブル予約</h3>
+                  <form action="mailto:nguyentrivien97mie@gmail.com" method="POST" enctype="text/plain">
+                      <div class="form-row">
+                          <select name="day">
+                              <option value="select-day">日付選択</option>
+                              <option value="Monday">月曜日</option>
+                              <option value="Tuesday">火曜日</option>
+                              <option value="Wednesday">水曜日</option>
+                              <option value="Thursday">木曜日</option>
+                              <option value="Friday">金曜日</option>
+                              <option value="Saturday">土曜日</option>
+                              <option value="Sunday">日曜日</option>
+                          </select>
+                          <select name="hours">
+                              <option value="select-hour">時間選択</option>
+                              <option value="select-hour">10:00 ~ 12:00</option>
+                              <option value="select-hour">12:00 ~ 14:00</option>
+                              <option value="select-hour">14:00 ~ 16:00</option>
+                              <option value="select-hour">16:00 ~ 18:00</option>
+                              <option value="select-hour">18:00 ~ 20:00</option>
+                              <option value="select-hour">20:00 ~ 22:00</option>
+                          </select>
+                      </div>
+                      <div class="form-row">
+                          <input type="text" name="name" placeholder="フールネーム">
+                          <input type="text" name="phone" placeholder="電話番号">
+                      </div>
+                      <div class="form-row">
+                         <input type="number" name="person" placeholder="お客様何人ですか？" min="1">
+                         <input type="submit" name="submit" value="テーブル予約">  
+                      </div>
+                  </form>
+              </div>
+          </div>
+  </section>
+    </article>
+     <!--End of  Article ------->
+</body>
+</html>
+
